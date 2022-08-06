@@ -10,8 +10,8 @@
 //! use std::path::Path;
 //!
 //! use calloop::EventLoop;
+//! use calloop_notify::notify::{RecursiveMode, Watcher};
 //! use calloop_notify::NotifySource;
-//! use notify::{RecursiveMode, Watcher};
 //!
 //! // Create calloop event loop.
 //! let mut event_loop = EventLoop::try_new().unwrap();
@@ -37,6 +37,7 @@ use std::ops::{Deref, DerefMut};
 
 use calloop::channel::{self, Channel, ChannelError, Event as ChannelEvent};
 use calloop::{EventSource, Poll, PostAction, Readiness, Token, TokenFactory};
+pub use notify;
 use notify::{Event, RecommendedWatcher};
 
 /// Calloop event source for watching files.
@@ -57,8 +58,8 @@ use notify::{Event, RecommendedWatcher};
 /// use std::path::Path;
 ///
 /// use calloop::EventLoop;
+/// use calloop_notify::notify::{RecursiveMode, Watcher};
 /// use calloop_notify::NotifySource;
-/// use notify::{RecursiveMode, Watcher};
 ///
 /// // Create calloop event loop.
 /// let mut event_loop = EventLoop::try_new().unwrap();

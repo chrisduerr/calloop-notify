@@ -1,6 +1,6 @@
 [package]
 name = "calloop-notify"
-version = "0.1.0"
+version = "0.1.1"
 description = "Calloop adapter for Notify"
 authors = ["Christian Duerr <contact@christianduerr.com>"]
 homepage = "https://github.com/chrisduerr/calloop-notify"
