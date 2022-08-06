@@ -16,8 +16,8 @@ system APIs.
 use std::path::Path;
 
 use calloop::EventLoop;
+use calloop_notify::notify::{RecursiveMode, Watcher};
 use calloop_notify::NotifySource;
-use notify::{RecursiveMode, Watcher};
 
 fn main() {
     // Create calloop event loop.
