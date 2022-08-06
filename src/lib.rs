@@ -6,7 +6,7 @@
 //!
 //! ## Example
 //!
-//! ```rust
+//! ```rust,no_run
 //! use std::path::Path;
 //!
 //! use calloop::EventLoop;
@@ -53,7 +53,7 @@ use notify::{Event, RecommendedWatcher};
 ///
 /// ## Example
 ///
-/// ```rust
+/// ```rust,no_run
 /// use std::path::Path;
 ///
 /// use calloop::EventLoop;
@@ -96,7 +96,9 @@ impl NotifySource {
     ///
     /// ## Example
     ///
-    /// ```rust
+    /// ```rust,no_run
+    /// use calloop_notify::NotifySource;
+    ///
     /// let notify_source = NotifySource::new().unwrap();
     /// ```
     pub fn new() -> Result<Self, notify::Error> {
