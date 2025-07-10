@@ -4,12 +4,12 @@ version = "0.1.1"
 description = "Calloop adapter for Notify"
 authors = ["Christian Duerr <contact@christianduerr.com>"]
 homepage = "https://github.com/chrisduerr/calloop-notify"
-rust-version = "1.62.1"
+rust-version = "1.85.0"
 categories = ["asynchronous", "filesystem", "os"]
 keywords = ["notify", "calloop", "events", "filesystem", "watch"]
 license = "MIT"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
-notify = "5.0.0-pre.15"
-calloop = "0.10.1"
+notify = "8.1.0"
+calloop = "0.14.2"

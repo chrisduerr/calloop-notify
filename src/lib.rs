@@ -58,8 +58,8 @@ use notify::{Event, RecommendedWatcher};
 /// use std::path::Path;
 ///
 /// use calloop::EventLoop;
-/// use calloop_notify::notify::{RecursiveMode, Watcher};
 /// use calloop_notify::NotifySource;
+/// use calloop_notify::notify::{RecursiveMode, Watcher};
 ///
 /// // Create calloop event loop.
 /// let mut event_loop = EventLoop::try_new().unwrap();
